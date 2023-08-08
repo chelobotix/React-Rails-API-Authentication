@@ -66,6 +66,7 @@ GEM
       i18n (>= 1.6, < 2)
       minitest (>= 5.1)
       tzinfo (~> 2.0)
+    bcrypt (3.1.19)
     bindex (0.8.1)
     bootsnap (1.16.0)
       msgpack (~> 1.2)
@@ -120,6 +121,8 @@ GEM
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
+    rack-cors (2.0.1)
+      rack (>= 2.0.0)
     rack-test (2.1.0)
       rack (>= 1.3)
     rails (7.0.6)
@@ -184,12 +187,14 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  bcrypt (~> 3.1, >= 3.1.12)
   bootsnap
   debug
   importmap-rails
   jbuilder
   pg (~> 1.1)
   puma (~> 5.0)
+  rack-cors
   rails (~> 7.0.6)
   sprockets-rails
   stimulus-rails

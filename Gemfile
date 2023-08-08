@@ -6,6 +6,12 @@ ruby "3.2.2"
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.0.6"
 
+# Bcrypt
+gem "bcrypt", '~> 3.1', '>= 3.1.12'
+
+# Rack-cors
+gem "rack-cors", :require => 'rack/cors'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem "sprockets-rails"
 
